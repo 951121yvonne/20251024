@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sketch</title>
+
+    <link rel="stylesheet" type="text/css" href="style.css"> 
+
+    <script src="libraries/p5.min.js"></script>
+    <script src="libraries/p5.sound.min.js"></script>
+  </head>
+
+  <body>
+    <div id="sidebar" role="navigation" aria-label="作品選單">
+      <h3 class="menu-title">作品選單</h3>
+      <ul class="menu-list">
+        <li id="work1" class="menu-item active">作品一</li>
+        <li id="work2" class="menu-item">作品二（海洋）</li>
+        <li id="work3" class="menu-item">作品三（夕陽）</li>
+      </ul>
+    </div>
+    <!-- iframe for work1 (external page). Hidden by default -->
+    <iframe id="work1Frame" src="" title="作品一 外部內容" sandbox="allow-same-origin allow-scripts allow-forms" hidden></iframe>
+    <script src="sketch.js"></script>
+  </body>
+</html>
